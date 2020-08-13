@@ -229,7 +229,7 @@ class CephCluster(object):
         if len(response_data) > 0:
             j = json.loads(response_data)
             pretty = json.dumps(j, sort_keys=True, indent=2)
-            log.debug(f"_json_asok output\n{pretty}")
+            #log.debug(f"_json_asok output\n{pretty}")
             return j
         else:
             log.debug("_json_asok output empty")
