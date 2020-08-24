@@ -10,6 +10,7 @@ import os
 from teuthology.orchestra import run
 from teuthology.orchestra.run import CommandFailedError, ConnectionLostError, Raw
 from tasks.cephfs.filesystem import Filesystem
+import platform
 
 log = logging.getLogger(__name__)
 
@@ -198,6 +199,8 @@ class CephFSMount(object):
         return six.ensure_str(p.stdout.getvalue().strip())
 
     def run_shell_payload(self, payload, **kwargs):
+        print("Python Versionnnnnn" + platform.python_version())
+        print("Python Pathhhhhhh" +  os.environ['PYTHONPATH'].split(os.pathsep))
         return self.run_shell(["bash", "-c", Raw(f"{payload}")], **kwargs)
 
     def run_shell(self, args, wait=True, stdin=None, check_status=True,
