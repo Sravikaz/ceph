@@ -199,8 +199,10 @@ class CephFSMount(object):
         return six.ensure_str(p.stdout.getvalue().strip())
 
     def run_shell_payload(self, payload, **kwargs):
-        print("Python Versionnnnnn" + platform.python_version())
-        print("Python Pathhhhhhh" +  os.environ['PYTHONPATH'].split(os.pathsep))
+        pythonn_version = platform.python_version()
+        pythonn_path = os.environ['PYTHONPATH'].split(os.pathsep)
+        log.info('Python Versionnnnnn is %s', pythonn_version)
+        log.info('Python Pathhhhhhh is %s',  pythonn_path)
         return self.run_shell(["bash", "-c", Raw(f"{payload}")], **kwargs)
 
     def run_shell(self, args, wait=True, stdin=None, check_status=True,
