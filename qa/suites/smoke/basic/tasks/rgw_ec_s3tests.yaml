@@ -6,6 +6,7 @@ overrides:
 tasks:
 - install:
 - ceph:
+    log-whitelist: ['Failed to load ceph-mgr modules: rook']
 - rgw: [client.0]
 - s3tests:
     client.0:

@@ -2,6 +2,7 @@ tasks:
 - install:
 - ceph:
     fs: xfs
+    log-whitelist: ['Failed to load ceph-mgr modules: rook']
     conf:
       mds:
         debug mds: 20

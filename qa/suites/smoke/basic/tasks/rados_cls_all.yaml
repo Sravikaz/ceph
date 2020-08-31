@@ -10,6 +10,7 @@ tasks:
 - install:
 - ceph:
     fs: xfs
+    log-whitelist: ['Failed to load ceph-mgr modules: rook']
 - workunit:
     clients:
       client.0:
