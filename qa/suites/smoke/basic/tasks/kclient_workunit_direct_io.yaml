@@ -6,6 +6,7 @@ overrides:
 tasks:
 - install:
 - ceph:
+    log-whitelist: ['Failed to load ceph-mgr modules: rook']
 - kclient:
 - workunit:
     clients:
