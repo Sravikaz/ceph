@@ -10,6 +10,7 @@ overrides:
 tasks:
 - install:
 - ceph:
+    log-whitelist: ['Failed to load ceph-mgr modules: rook']
 - ceph-fuse:
 - workunit:
     clients:

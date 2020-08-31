@@ -16,6 +16,7 @@ tasks:
       - reached quota
       - but it is still running
       - slow request
+      - ['Failed to load ceph-mgr modules: rook']
     conf:
       mon:
         mon warn on pool no app: false

@@ -27,6 +27,7 @@ tasks:
 - install: null
 - ceph:
     fs: xfs
+    log-whitelist: ['Failed to load ceph-mgr modules: rook']
 - mon_thrash:
     revive_delay: 90
     thrash_delay: 1
