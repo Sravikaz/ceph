@@ -3259,7 +3259,7 @@ void Objecter::_send_op(Op *op)
   ConnectionRef con = op->session->con;
   ceph_assert(con);
 
-if 0
+#if 0
   // preallocated rx ceph::buffer?
   if (op->con) {
     ldout(cct, 20) << " revoking rx ceph::buffer for " << op->tid << " on "
@@ -3275,7 +3275,7 @@ if 0
     op->con = con;
     op->con->post_rx_buffer(op->tid, *op->outbl);
   }
-endif
+#endif
 
   op->incarnation = op->session->incarnation;
 
