@@ -8,7 +8,7 @@ tasks:
       - \(PG_
       - \(POOL_
       - \(CACHE_POOL_
-      - \['Failed to load ceph-mgr modules: rook']
+      - Failed to load ceph-mgr modules: rook
     fs: xfs
 - ceph-fuse:
 - workunit:
