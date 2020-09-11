@@ -13,7 +13,7 @@ overrides:
       - \(TOO_FEW_PGS\)
       - \(OSD_SLOW_PING_TIME
       - slow request
-      - Failed to load ceph-mgr modules:rook
+      - 'Failed to load ceph-mgr modules: rook' 
     conf:
       client:
         rbd cache: true
