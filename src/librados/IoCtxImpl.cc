@@ -699,10 +699,6 @@ int librados::IoCtxImpl::operate_read(const object_t& oid,
 
   Context *onack = new C_SafeCond(mylock, cond, &done, &r);
 
-  if (pbl)
-  {
-     pbl->invalidate_crc();
-  }
   int op = o->ops[0].op.op;
   ldout(client->cct, 10) << ceph_osd_op_name(op) << " oid=" << oid << " nspace=" << oloc.nspace << dendl;
   Objecter::Op *objecter_op = objecter->prepare_read_op(oid, oloc,
