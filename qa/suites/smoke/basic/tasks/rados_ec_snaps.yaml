@@ -14,7 +14,7 @@ tasks:
       - \(SLOW_OPS\)
       - \(TOO_FEW_PGS\)
       - slow request
-      - ['Failed to load ceph-mgr modules: rook']
+      - 'Failed to load ceph-mgr modules: rook'
 - thrashosds:
     chance_pgnum_grow: 3
     chance_pgnum_shrink: 2
