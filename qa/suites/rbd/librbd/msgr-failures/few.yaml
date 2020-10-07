@@ -7,3 +7,4 @@ overrides:
     log-whitelist:
       - but it is still running
       - \(OSD_SLOW_PING_TIME
+      - 'Failed to load ceph-mgr modules: rook'
