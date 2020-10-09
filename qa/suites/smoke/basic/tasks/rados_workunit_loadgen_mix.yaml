@@ -6,6 +6,7 @@ tasks:
     - but it is still running
     - overall HEALTH_
     - \(POOL_APP_NOT_ENABLED\)
+    - 'Failed to load ceph-mgr modules: rook'
 - ceph-fuse:
 - workunit:
     clients:

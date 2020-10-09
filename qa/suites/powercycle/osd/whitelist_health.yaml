@@ -5,3 +5,4 @@ overrides:
       - \(MDS_SLOW_REQUEST\)
       - MDS_SLOW_METADATA_IO
       - Behind on trimming
+      - 'Failed to load ceph-mgr modules: rook'

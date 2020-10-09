@@ -2,6 +2,7 @@ tasks:
 - install:
 - ceph:
     fs: ext4
+    log-whitelist: ['Failed to load ceph-mgr modules: rook']
 - rgw: [client.0]
 - swift:
     client.0:
