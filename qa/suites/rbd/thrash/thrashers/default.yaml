@@ -3,6 +3,7 @@ overrides:
     log-whitelist:
     - but it is still running
     - objects unfound and apparently lost
+    - 'Failed to load ceph-mgr modules: rook'
 tasks:
 - thrashosds:
     timeout: 1200
