@@ -8,6 +8,7 @@ tasks:
 - ceph:
     log-whitelist:
       - 'application not enabled'
+      - 'Failed to load ceph-mgr modules: rook'
 - workunit:
     timeout: 30m
     clients:
