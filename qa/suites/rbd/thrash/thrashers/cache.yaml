@@ -6,6 +6,7 @@ overrides:
       - overall HEALTH_
       - \(CACHE_POOL_NEAR_FULL\)
       - \(CACHE_POOL_NO_HIT_SET\)
+      - 'Failed to load ceph-mgr modules: rook'
 tasks:
 - exec:
     client.0:
